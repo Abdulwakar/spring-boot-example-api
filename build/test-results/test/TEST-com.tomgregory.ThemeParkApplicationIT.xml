@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tomgregory.ThemeParkApplicationIT" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-22T07:44:25" hostname="L39792WEU" time="0.917">
+  <properties/>
+  <testcase name="getsAllRides" classname="com.tomgregory.ThemeParkApplicationIT" time="0.694"/>
+  <testcase name="getsSingleRide" classname="com.tomgregory.ThemeParkApplicationIT" time="0.061"/>
+  <testcase name="returnsNotFoundForInvalidSingleRide" classname="com.tomgregory.ThemeParkApplicationIT" time="0.019"/>
+  <testcase name="addsNewRide" classname="com.tomgregory.ThemeParkApplicationIT" time="0.14"/>
+  <system-out><![CDATA[08:44:16.991 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tomgregory.ThemeParkApplicationIT]
+08:44:16.992 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tomgregory.ThemeParkApplicationIT]
+08:44:16.993 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tomgregory.ThemeParkApplicationIT]
+08:44:16.994 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tomgregory.ThemeParkApplicationIT]
+08:44:17.005 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@584de686 testClass = ThemeParkApplicationIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@224dafa4 testClass = ThemeParkApplicationIT, locations = '{}', classes = '{class com.tomgregory.ThemeParkApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ab3c6e5, [ImportsContextCustomizer@23f37334 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@72c4ae71, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@315a59c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@75a5f791], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+08:44:17.011 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tomgregory.ThemeParkApplicationIT]
+08:44:17.012 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tomgregory.ThemeParkApplicationIT]
+08:44:17.054 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2020-12-22 08:44:17.557  INFO 761 --- [    Test worker] com.tomgregory.ThemeParkApplicationIT    : Starting ThemeParkApplicationIT on L39792WEU with PID 761 (started by shaia2 in /home/shaia2/git-repos/others/spring-boot-example-api)
+2020-12-22 08:44:17.560  INFO 761 --- [    Test worker] com.tomgregory.ThemeParkApplicationIT    : No active profile set, falling back to default profiles: default
+2020-12-22 08:44:19.409  INFO 761 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-22 08:44:19.526  INFO 761 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 1 JPA repository interfaces.
+2020-12-22 08:44:20.548  INFO 761 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-22 08:44:20.741  INFO 761 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class org.h2.jdbc.JdbcConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2020-12-22 08:44:20.757  INFO 761 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-22 08:44:20.898  INFO 761 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-22 08:44:21.080  INFO 761 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-12-22 08:44:21.373  INFO 761 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-22 08:44:21.705  INFO 761 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-22 08:44:22.672  INFO 761 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-22 08:44:22.682  INFO 761 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-22 08:44:23.489  WARN 761 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-22 08:44:24.163  INFO 761 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 08:44:25.252  INFO 761 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-12-22 08:44:25.252  INFO 761 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-12-22 08:44:25.280  INFO 761 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-22 08:44:25.351  INFO 761 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 99 ms
+2020-12-22 08:44:25.428  INFO 761 --- [    Test worker] com.tomgregory.ThemeParkApplicationIT    : Started ThemeParkApplicationIT in 8.357 seconds (JVM running for 10.172)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
